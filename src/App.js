@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import ResilienceHub from './components/ResilienceHub'
+import ResilienceHub from './components/prakash/ResilienceHub'
 
 
 function App() {

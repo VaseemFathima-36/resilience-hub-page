@@ -1,0 +1,21 @@
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.main-background {
+    background-color: #F8F8F8;
+  }
+
+  .card-title {
+    font-size: larger;
+    width: max-content;
+  }
+  .policy-name{
+    color: skyblue;
+  }
+  .target-name {
+    font-weight: bold;
+    color: blue;
+  }
+  .table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-color-type: var(--bs-table-striped-color);
+    --bs-table-bg-type: lightblue;
+}

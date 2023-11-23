@@ -32,20 +32,33 @@
     margin-bottom: 12px;
     display: inline-block;
   } */
-  .card-title {
+  /* .card-title {
     display: flex;
     align-items: center;
-  }
+  } */
    .h2-title {
     margin-top: 0.5rem;
     color: skyblue;
    }
-  .card-title b {
-    margin-right: 10px; /* Adjust the margin as needed */
+  /* .card-title b {
+    margin-right: 10px; 
     margin-left: 20px;
     color: darkblue;
     font-size: xx-large;
+  } */
+  .card-title {
+    color: skyblue;
+    font-size: larger;
+    width: max-content;
   }
+  .policy-name{
+    color: skyblue;
+  }
+  .target-name {
+    font-weight: bold;
+    color: blue;
+  }
+  has context menu
   .big-card .card-title {
     font-size: 18px;
     margin-bottom: 12px;
@@ -119,10 +132,12 @@
   .big-card-heading{
     color: black;
   }
-  .h2-style{
+  .h2-style {
     margin-top: 3rem;
+    width: max-content;
     margin-left: 3rem;
-  }
+    font-size: large;
+}
   .name-link-style{
     color:blue
   }
