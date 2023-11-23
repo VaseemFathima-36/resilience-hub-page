@@ -28,6 +28,12 @@
 .rr-title {
   color: #0D669B;
 }
+.name-title{
+    color: #1782FF;
+}
+.link-style{
+    text-decoration: none;
+}
 .table-striped1 > tbody > tr:nth-child(2n+1) > td, .table-striped1 > tbody > tr:nth-child(2n+1) > th {
   background-color: #E5F7FF;
 }

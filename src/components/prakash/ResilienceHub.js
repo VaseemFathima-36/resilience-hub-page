@@ -70,7 +70,7 @@ const ResilienceHub = () => {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {data1.map((employee, index) => (
+                                            {data1.map((employee) => (
                                                 <tr key={employee.Type}>
                                                     <td>{employee.Type}</td>
                                                     <td>{employee.RTO}</td>
@@ -100,7 +100,7 @@ const ResilienceHub = () => {
                                 <div className='table-responsive'>
                                     <table className='table table-bordered table-striped1'>
                                         <tbody>
-                                            {data2.map((employee, index) => (
+                                            {data2.map((employee) => (
                                                 <tr key={employee.Type}>
                                                     <td>{employee.Type}</td>
                                                     <td>{employee.Score}</td>
@@ -137,10 +137,10 @@ const ResilienceHub = () => {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {data3.map((employee, index) => (
+                                        {data3.map((employee) => (
                                             <tr key={employee.Type}>
                                                 <td>{employee.Type}</td>
-                                                <td className='name-link-style'>{employee.Name}</td>
+                                                <td className='name-title'><a href={employee.Name} className="link-style">{employee.Name}</a></td>
                                                 <td>{employee.State}</td>
                                                 <td>{employee.Description}</td>
                                                 <td>{employee.AppComponents}</td>
@@ -167,9 +167,9 @@ const ResilienceHub = () => {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {data4.map((employee, index) => (
+                                        {data4.map((employee) => (
                                             <tr key={employee['Component Name']}>
-                                                <td className='name-link-style'>{employee['Component Name']}</td>
+                                                 <td className='name-title'><a href={employee['Component Name']} className="link-style">{employee['Component Name']}</a></td>
                                                 <td>{employee.Type}</td>
                                                 <td>{employee['Current Compliance']}</td>
                                                 <td>{employee['Recommended compliance']}</td>
