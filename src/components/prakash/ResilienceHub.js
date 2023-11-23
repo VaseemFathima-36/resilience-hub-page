@@ -55,24 +55,27 @@ const ResilienceHub = () => {
                             <div className="card-body">
                                 <h6 className="card-title">Policy name <span className="target"><b>target-17367</b></span></h6>
                                 {/* Content for the first card */}
-                                <table className='table table-striped table-bordered'>
-                                    <thead>
-                                        <tr>
-                                            <th>Type</th>
-                                            <th>RTO</th>
-                                            <th>RPO</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {data1.map((employee, index) => (
-                                            <tr key={employee.Type}>
-                                                <td>{employee.Type}</td>
-                                                <td>{employee.RTO}</td>
-                                                <td>{employee.RPO}</td>
+                                <div className='table-responsive'>
+                                    <table className='table table-striped1 table-bordered'>
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>RTO</th>
+                                                <th>RPO</th>
                                             </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
+                                        </thead>
+                                        <tbody>
+                                            {data1.map((employee, index) => (
+                                                <tr key={employee.Type}>
+                                                    <td>{employee.Type}</td>
+                                                    <td>{employee.RTO}</td>
+                                                    <td>{employee.RPO}</td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+
                             </div>
                         </div>
 
@@ -80,26 +83,28 @@ const ResilienceHub = () => {
                     <div className='row mt-3'>
                         <div className="card">
                             <div className="card-body">
-                                <h5>Resiliency Score<span><b>40/100</b></span></h5>
+                                <h5 className='my-4'>
+                                    <span className='rs-title me-2'>Resiliency Score</span>
+                                    <span><b>
+                                        <span className='rs-top-text'>40</span>
+                                        /100</b>
+                                    </span>
+                                </h5>
 
                                 {/* Content for the second card */}
-                                <table className='table table-bordered table-striped'>
-                                    {/* <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                        </tr>
-                                    </thead> */}
-                                    <tbody>
-                                        {data2.map((employee, index) => (
-                                            <tr key={employee.Type}>
-                                                <td>{employee.Type}</td>
-                                                <td>{employee.Score}</td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
+                                <div className='table-responsive'>
+                                    <table className='table table-bordered table-striped1'>
+                                        <tbody>
+                                            {data2.map((employee, index) => (
+                                                <tr key={employee.Type}>
+                                                    <td>{employee.Type}</td>
+                                                    <td>{employee.Score}</td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -115,54 +120,60 @@ const ResilienceHub = () => {
                                 </span>
                             </h6>
                             <h6><b>Operational Recommendations</b></h6>
-                            <table className='table table-bordered table-striped'>
-                                <thead>
-                                    <tr>
-                                        <th>Type</th>
-                                        <th>Name</th>
-                                        <th>State</th>
-                                        <th>Description</th>
-                                        <th>AppComponents</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {data3.map((employee, index) => (
-                                        <tr key={employee.Type}>
-                                            <td>{employee.Type}</td>
-                                            <td className='name-link-style'>{employee.Name}</td>
-                                            <td>{employee.State}</td>
-                                            <td>{employee.Description}</td>
-                                            <td>{employee.AppComponents}</td>
-
+                            <div className='table-responsive'>
+                                <table className='table table-bordered table-striped1'>
+                                    <thead>
+                                        <tr>
+                                            <th>Type</th>
+                                            <th>Name</th>
+                                            <th>State</th>
+                                            <th>Description</th>
+                                            <th>AppComponents</th>
                                         </tr>
-                                    ))}
-                                </tbody>
-                            </table>
+                                    </thead>
+                                    <tbody>
+                                        {data3.map((employee, index) => (
+                                            <tr key={employee.Type}>
+                                                <td>{employee.Type}</td>
+                                                <td className='name-link-style'>{employee.Name}</td>
+                                                <td>{employee.State}</td>
+                                                <td>{employee.Description}</td>
+                                                <td>{employee.AppComponents}</td>
+
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+
                         </div>
 
                         <div className="card-body">
 
                             <h6><b>Reciliency Recommendations</b></h6>
-                            <table className='table table-bordered table-striped'>
-                                <thead>
-                                    <tr>
-                                        <th>Component Name</th>
-                                        <th>Type</th>
-                                        <th>Current Compliance</th>
-                                        <th>Recommended compliance</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {data4.map((employee, index) => (
-                                        <tr key={employee['Component Name']}>
-                                            <td className='name-link-style'>{employee['Component Name']}</td>
-                                            <td>{employee.Type}</td>
-                                            <td>{employee['Current Compliance']}</td>
-                                            <td>{employee['Recommended compliance']}</td>
+                            <div className='table-responsive'>
+                                <table className='table table-bordered table-striped1'>
+                                    <thead>
+                                        <tr>
+                                            <th>Component Name</th>
+                                            <th>Type</th>
+                                            <th>Current Compliance</th>
+                                            <th>Recommended compliance</th>
                                         </tr>
-                                    ))}
-                                </tbody>
-                            </table>
+                                    </thead>
+                                    <tbody>
+                                        {data4.map((employee, index) => (
+                                            <tr key={employee['Component Name']}>
+                                                <td className='name-link-style'>{employee['Component Name']}</td>
+                                                <td>{employee.Type}</td>
+                                                <td>{employee['Current Compliance']}</td>
+                                                <td>{employee['Recommended compliance']}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+
                         </div>
 
                     </div>

@@ -1,3 +1,13 @@
 .main-background {
   background-color: #F8F8F8;
 }
+
+.rs-title {
+  color: #0E679B;
+}
+.rs-top-text {
+  color: #F1BC01;
+}
+.table-striped1 > tbody > tr:nth-child(2n+1) > td, .table-striped1 > tbody > tr:nth-child(2n+1) > th {
+  background-color: #E5F7FF;
+}
