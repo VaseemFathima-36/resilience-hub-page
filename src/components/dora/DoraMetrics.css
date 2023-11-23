@@ -62,4 +62,12 @@
 .chart {
     width: 30rem;
     height: 19rem;
-  }
+}
+
+.card-body {
+    min-height: 2rem;
+}
+
+.card-text {
+    margin-top: -8%;
+}
