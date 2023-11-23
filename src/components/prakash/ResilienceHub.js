@@ -44,7 +44,7 @@ const ResilienceHub = () => {
 
             {/* First Column */}
             <div className='row'>
-                <h6 className='text-start title'>
+                <h6>
                     <span>Resilience Hub Application Name:{' '}</span>
                     <span><b>Theatre Booking</b>{' '}</span>
                     <span>version{' '}<b>V1</b></span>
@@ -65,7 +65,7 @@ const ResilienceHub = () => {
                                     </thead>
                                     <tbody>
                                         {data1.map((employee, index) => (
-                                            <tr key={employee.Type} className={index % 2 === 0 ? 'oddRow' : 'evenRow'}>
+                                            <tr key={employee.Type}>
                                                 <td>{employee.Type}</td>
                                                 <td>{employee.RTO}</td>
                                                 <td>{employee.RPO}</td>
@@ -79,8 +79,8 @@ const ResilienceHub = () => {
                     </div>
                     <div className='row mt-3'>
                         <div className="card">
-                            <div className="card-body card-body-1">
-                                <h5 className="card-title"><h2 className='h2-title'>Resiliency Score </h2><span className="target"><b>40/100</b></span></h5>
+                            <div className="card-body">
+                                <h5>Resiliency Score<span><b>40/100</b></span></h5>
 
                                 {/* Content for the second card */}
                                 <table className='table table-bordered table-striped'>
@@ -93,7 +93,7 @@ const ResilienceHub = () => {
                                     </thead> */}
                                     <tbody>
                                         {data2.map((employee, index) => (
-                                            <tr key={employee.Type} className={index % 2 === 0 ? 'oddRow' : 'evenRow'}>
+                                            <tr key={employee.Type}>
                                                 <td>{employee.Type}</td>
                                                 <td>{employee.Score}</td>
                                             </tr>
@@ -127,7 +127,7 @@ const ResilienceHub = () => {
                                 </thead>
                                 <tbody>
                                     {data3.map((employee, index) => (
-                                        <tr key={employee.Type} className={index % 2 === 0 ? 'oddRow' : 'evenRow'}>
+                                        <tr key={employee.Type}>
                                             <td>{employee.Type}</td>
                                             <td className='name-link-style'>{employee.Name}</td>
                                             <td>{employee.State}</td>
@@ -154,7 +154,7 @@ const ResilienceHub = () => {
                                 </thead>
                                 <tbody>
                                     {data4.map((employee, index) => (
-                                        <tr key={employee['Component Name']} className={index % 2 === 0 ? 'oddRow-last-table' : 'evenRow-last-table'}>
+                                        <tr key={employee['Component Name']}>
                                             <td className='name-link-style'>{employee['Component Name']}</td>
                                             <td>{employee.Type}</td>
                                             <td>{employee['Current Compliance']}</td>
