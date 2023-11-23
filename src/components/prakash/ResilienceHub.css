@@ -1,0 +1,132 @@
+/* In CardsLayout.css */
+ 
+.cards-layout {
+    display: flex;
+    justify-content: center;
+  
+  }
+   
+  .column {
+    width: 50%; /* Adjust the width as needed */
+  }
+   
+  .card,
+  .big-card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+  }
+   .big-card-style{
+    margin-top: 8.5rem;
+    margin-left: -50%;
+    width: 122%;
+    height: 84%;
+   }
+  .card-body,
+  .big-card .card-body {
+    padding: 16px;
+  }
+   
+  /* .card-title{
+    font-size: 18px;
+    margin-bottom: 12px;
+    display: inline-block;
+  } */
+  .card-title {
+    display: flex;
+    align-items: center;
+  }
+   .h2-title {
+    margin-top: 0.5rem;
+    color: skyblue;
+   }
+  .card-title b {
+    margin-right: 10px; /* Adjust the margin as needed */
+    margin-left: 20px;
+    color: darkblue;
+    font-size: xx-large;
+  }
+  .big-card .card-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .evenRow {
+    background-color: transparent; /* No background color for even rows */
+  }
+   
+  .oddRow {
+    background-color: lightblue; /* Light blue background color for odd rows */
+  }
+   
+  .evenRow-last-table {
+    background-color: transparent; /* No background color for even rows */
+  }
+   
+  .oddRow-last-table {
+    background-color: lightgray; /* Light blue background color for odd rows */
+  }
+  .big-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adjust as needed */
+    height: 260px;
+    font-size: larger;
+  }
+   
+  .big-card th, 
+  .big-card td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  .table-1{
+    border: 1px solid #ddd;
+    width: 70%;
+    height: 200px;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-size: larger;
+    text-align: center;
+
+  }
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  /* .table-1 th:first-child,
+  .table-1 td:first-child{
+     text-align: right; 
+  } */
+  .table-2{
+    border: 1px solid #ddd;
+    width: 70%;
+    height: 200px;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-size: larger;
+  }
+  .card-1{
+    height: 324px;
+    width: 42%;
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+  .card-body-1{
+    width: 131%;
+    height: 360px;
+  }
+  .big-card-heading{
+    color: black;
+  }
+  .h2-style{
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+  .name-link-style{
+    color:blue
+  }
+  .big-card-heading-2{
+    color: blue;
+    font-size: x-large;
+  }
