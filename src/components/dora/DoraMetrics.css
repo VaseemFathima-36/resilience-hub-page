@@ -1,0 +1,65 @@
+.title {
+    color: #004388;
+}
+.background {
+    background-color: #F8F8F8;
+}
+
+.background2 {
+    background: #F1F9FF !important;
+}
+
+.border1 {
+    border-color: #BAE1FE;
+}
+
+.card-desc {
+    /* vertical-align: super; */
+    font-size: 14px;
+    display: block;
+
+}
+.card-1-val {
+    color: #4CB4FF;
+    font-size: 3rem;
+    font-weight: 800;
+    font-stretch: semi-condensed;
+}
+
+.card-2-val {
+    color: #9782e7;
+    font-size: 3rem;
+    font-weight: 800;
+    font-stretch: semi-condensed;
+}
+
+.card-3-val {
+    color: #3d905c;
+    font-size: 3rem;
+    font-weight: 800;
+    font-stretch: semi-condensed;
+}
+
+.card-4-val {
+    color: #d94b4b;
+    font-size: 3rem;
+    font-weight: 800;
+    font-stretch: semi-condensed;
+}
+
+#card-4{
+    margin-right: -3%;
+}
+
+#percent{
+
+    font-size: xx-large;
+}
+.subscript {
+    font-size: large;
+}
+
+.chart {
+    width: 30rem;
+    height: 19rem;
+  }
