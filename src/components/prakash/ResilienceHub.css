@@ -2,12 +2,39 @@
   background-color: #F8F8F8;
 }
 
+.pn-title {
+  color: #0E679B;
+}
+.pn-target {
+  color: #1782FF;
+  font-size: 1.25rem;
+}
+
 .rs-title {
   color: #0E679B;
 }
 .rs-top-text {
   color: #F1BC01;
 }
+.pn-sub-text {
+  font-size: 1.25rem;
+}
+.r-title {
+  font-size: 1rem;
+}
+.or-title {
+  color: #0052B3;
+}
+.rr-title {
+  color: #0D669B;
+}
 .table-striped1 > tbody > tr:nth-child(2n+1) > td, .table-striped1 > tbody > tr:nth-child(2n+1) > th {
   background-color: #E5F7FF;
+}
+
+.table-striped1 > tbody >tr > td {
+  font-size: 0.65rem;
+}
+.table-striped1 > thead >tr > th {
+  font-size: 0.8rem;
 }

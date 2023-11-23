@@ -45,15 +45,20 @@ const ResilienceHub = () => {
             {/* First Column */}
             <div className='row'>
                 <h6>
-                    <span>Resilience Hub Application Name:{' '}</span>
-                    <span><b>Theatre Booking</b>{' '}</span>
-                    <span>version{' '}<b>V1</b></span>
+                    <span className='me-1'>Resilience Hub Application Name:</span>
+                    <span className='me-2'><b>Theatre Booking</b></span>
+                    <span className='me-1'>version</span>
+                    <span><b>V1</b></span>
                 </h6>
                 <div className="col-sm-4">
                     <div className='row'>
                         <div className="card">
                             <div className="card-body">
-                                <h6 className="card-title">Policy name <span className="target"><b>target-17367</b></span></h6>
+                                <h6 className="card-title mt-3 mb-4">
+                                    <span className='pn-title me-2'>Policy name
+                                    </span>
+                                    <span className="pn-target"><b>target-17367</b></span>
+                                </h6>
                                 {/* Content for the first card */}
                                 <div className='table-responsive'>
                                     <table className='table table-striped1 table-bordered'>
@@ -80,16 +85,16 @@ const ResilienceHub = () => {
                         </div>
 
                     </div>
-                    <div className='row mt-3'>
+                    <div className='row mt-4'>
                         <div className="card">
                             <div className="card-body">
-                                <h5 className='my-4'>
+                                <h6 className='mt-3 mb-4'>
                                     <span className='rs-title me-2'>Resiliency Score</span>
-                                    <span><b>
+                                    <span className='pn-sub-text'><b>
                                         <span className='rs-top-text'>40</span>
                                         /100</b>
                                     </span>
-                                </h5>
+                                </h6>
 
                                 {/* Content for the second card */}
                                 <div className='table-responsive'>
@@ -113,13 +118,13 @@ const ResilienceHub = () => {
                 <div className="col-sm-8">
                     <div className="card">
                         <div className="card-body">
-                            <h6 className="card-title">
+                            <p className="card-title mb-1">
                                 <span>Recommendations </span>
                                 <span >
                                     <b>Assessment-report-gwsb3ymb77i</b>
                                 </span>
-                            </h6>
-                            <h6><b>Operational Recommendations</b></h6>
+                            </p>
+                            <p className='or-title mb-2'><b>Operational Recommendations</b></p>
                             <div className='table-responsive'>
                                 <table className='table table-bordered table-striped1'>
                                     <thead>
@@ -148,9 +153,9 @@ const ResilienceHub = () => {
 
                         </div>
 
-                        <div className="card-body">
+                        <div className="card-body pt-0">
 
-                            <h6><b>Reciliency Recommendations</b></h6>
+                            <p className='rr-title mb-2'><b>Resiliency Recommendations</b></p>
                             <div className='table-responsive'>
                                 <table className='table table-bordered table-striped1'>
                                     <thead>
