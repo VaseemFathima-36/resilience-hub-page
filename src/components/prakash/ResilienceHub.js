@@ -49,7 +49,7 @@ const ResilienceHub = () => {
                     <span><b>Theatre Booking</b>{' '}</span>
                     <span>version{' '}<b>V1</b></span>
                 </h6>
-                <div className="col-sm-6">
+                <div className="col-sm-4">
                     <div className='row'>
                         <div className="card">
                             <div className="card-body">
@@ -105,7 +105,7 @@ const ResilienceHub = () => {
                     </div>
                 </div>
                 {/* Second Column */}
-                <div className="col-sm-6">
+                <div className="col-sm-8">
                     <div className="card">
                         <div className="card-body">
                             <h6 className="card-title">
