@@ -57,8 +57,8 @@ function DoraMetrics() {
 
                 </div>
                 <div className="row p-3 mb-5">
-                    <div className="col-sm-6 mb-4 mb-sm-0">
-                        <div className='card'>
+                    <div className="col-sm-7 mb-4 mb-sm-0">
+                        <div className='card chart-card-height'>
                             <ChartjsOne />
                         </div>
 
